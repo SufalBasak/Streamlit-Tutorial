@@ -148,6 +148,57 @@ st.write(langs)
 #▶ Radio
 st.write("▶ Radio")
 choice = st.radio("Select One", ["A", "B", "C"])
+#▶ Select Box
+st.write("▶ Select Box")
+option = st.selectbox("Select Course", ["DS", "AI", "ML"])
+
+#▶ Select Slider
+st.write("▶ Select Slider")
+level = st.select_slider("Level", ["Beginner", "Intermediate", "Advanced"])
+
+#▶ Toggle
+st.write("▶ Toggle")
+toggle = st.toggle("Enable Dark Mode")
+
+#Number Input
+st.write("Number Input")
+num = st.number_input("Enter number", 0, 100)
+
+#▶ Slider
+st.write("Slider")
+age = st.slider("Select Age", 1, 100)
+
+#▶ Text Area
+st.write('▶ Text Area')
+msg = st.text_area("Enter message")
+
+#▶ Text Input
+st.write("▶ Text Input")
+name = st.text_input("Enter your name")
+
+#▶ Date Input
+st.write("▶ Date Input")
+date = st.date_input("Select Date")
+
+#▶ Time Input
+st.write("▶ Time Input")
+time = st.time_input("Select Time")
+
+st.write('---------------------------------------------------')  
+
+
+
+
+
+
+
+
+
+
+
+
+# python -m streamlit run app.py
+
 
 
 
