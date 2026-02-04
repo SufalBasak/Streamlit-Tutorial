@@ -110,6 +110,45 @@ map_df = pd.DataFrame({
 })
 st.map(map_df)
 
+st.write('---------------------------------------------------')  
+st.subheader("Input Widgets")
+
+#Button
+st.write('Button')
+
+if st.button("Click Me"):
+    st.success("Button clicked!")
+
+#Download Button
+st.write('Download Button')
+st.download_button("Download Text", "Hello Streamlit", file_name="data.txt")
+
+#▶ Feedback / Link Button
+st.write("Feedback / Link Button")
+st.link_button("Visit GitHub", "https://github.com//SufalBasak")
+
+#Page Link
+st.write("Page Link")
+st.page_link("https://streamlit.io", label="Streamlit Website")
+#Checkbox
+st.write("Checkbox")
+if st.checkbox("Accept Terms"):
+    st.write("Accepted")
+
+#▶ Color Picker
+st.write("Color Picker")
+color = st.color_picker("Pick a color")
+st.write(color)
+
+#▶ Multi Select
+st.write("▶ Multi Select")
+langs = st.multiselect("Choose Languages", ["Python", "Java", "C++"])
+st.write(langs)
+
+#▶ Radio
+st.write("▶ Radio")
+choice = st.radio("Select One", ["A", "B", "C"])
+
 
 
 
